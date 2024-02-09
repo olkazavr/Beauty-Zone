@@ -1,0 +1,69 @@
+.form-field{
+    margin-top: 19px;
+    margin-bottom: 16px;
+    margin-left: 56px;
+    margin-right: 57px;
+}
+.form-label{
+    display: block;
+}
+.form-input{
+    padding: 18px 32px;
+    width: 310px;
+    font-size: 13px;
+    line-height: 1.17;
+    border: 2px solid rgba(116, 114, 114, 1);
+    border-radius: 32px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.form-input:focus{
+    border-color: rgba(116, 114, 114, 1);
+    background-color: rgba(116, 114, 114, 1);
+    outline: none;
+}
+/* Якщо потрібно зробити поле неактивним:
+.form-input:disabled::placeholder{
+    color: lightgray;
+}
+До input відповідного поля добавити потрібно disabled.
+*/
+.form-input::placeholder{
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 1.17;
+}
+.form-input:focus::placeholder{
+    color: rgba(255, 255, 255, 1);
+}
+.form-button{
+    display: block;
+    margin: 16px auto 10px;
+    height: 53px;
+    color: var(--primary-light);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-brand);
+    border: 2px solid var(--color-brand);
+    border-radius: 32px;
+    cursor: pointer;
+    padding: 16px 32px;
+    transition: 0.5s;
+}
+.form-button:hover{
+    background-color: transparent;
+    color: var(--primary-light);
+}
+.form-terms{
+    color: rgba(116, 114, 114, 1);
+    margin: 8px auto 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    max-width: 220px;
+}
+.form-terms-link{
+    color: rgba(116, 114, 114, 1);
+    text-underline-offset: 2px;
+}

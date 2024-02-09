@@ -1,0 +1,104 @@
+.changes-section{
+    display: flex;
+    gap: 32px;
+
+    &__contant{
+        display: flex;
+        flex-direction: column;
+        max-width: 680px;
+        max-height: 440px;
+        text-align: left;
+        padding: 40px;
+        gap: 22px;
+        margin-top: 30px;
+
+        @media screen and (min-width:$bp-tablet){
+            align-items: center;
+            gap: 40px;
+            padding-left: 100px;
+        }
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 0;
+
+        @media screen and (min-width:$bp-desktop){
+            font-size: 22px;
+        }
+    }
+    &__box{
+        display: none;
+        
+        @media screen and (min-width:$bp-desktop){
+            display: block;
+        }
+    }
+    &__before,
+    &__after{
+        position: absolute;
+        border-radius: 50%;
+        width: 327px;
+        height: 328px;
+    }
+    &__before{
+        top: 740px;
+        left: 850px;
+    }
+    &__after{
+        top: 1070px;
+        left: 990px;
+    }
+    &__star-1{
+        position: absolute;
+        top: 840px;
+        left: 1200px;
+        width: 64px;
+        height: 64px;
+        animation: star 5s infinite;
+    }
+    &__star-2{
+        position: absolute;
+        top: 1083px;
+        left: 900px;
+        width: 40px;
+        height: 40px;
+        animation: star 2s infinite;
+    }
+    &__star-3{
+        position: absolute;
+        top: 1000px;
+        left: 1180px;
+        width: 16px;
+        height: 16px;
+        animation: star 2s ease-in-out infinite;
+    }
+    @keyframes star{
+        0% { 
+            opacity: 0;
+            rotate: 30deg;
+            scale: 40%;
+            }
+        25%{
+            opacity: 0.5;
+            rotate: 30deg;
+            scale: 60%;
+        }
+        50% { 
+            opacity: 0.5;
+            rotate: 45deg;
+            scale: 80%;
+        }
+        75%{
+            opacity: 1;
+            rotate: 45deg;
+            scale: 100%;
+        }
+        100% { 
+            opacity: 1;
+            rotate: 45deg; 
+            scale: 10%;
+        }
+    }
+}
+

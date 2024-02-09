@@ -1,0 +1,102 @@
+
+.footer{
+    text-align: center;
+    position: relative;
+    background-color: var(--primary-dark);
+    
+    @media screen and (min-width: $bp-tablet) {
+        text-align: left;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 56px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 160px;
+            padding-left: 100px;
+            left: -30px;
+        }
+    }
+    &__container::after{
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+        display: block;
+        position: absolute;
+        bottom: 0;    
+        background-repeat: no-repeat;    
+        content: '';    
+        background-image: url('../images/footer-photo.png');
+        width: 248px;
+        height: 150px;
+        right: 0;
+        }
+    }
+    &__nav,
+    &__address{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-basis: 50%;
+            flex-direction: row;
+        }
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+    &__icon{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+    &__address-link, &__link{
+        color: var(--primary-light);
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: color 0.3s
+    }
+    &__link:hover{
+        color: var(--color-brand);
+    }
+    &__address-copyright{
+        font-size: 13px;
+        color: #747272;
+    }
+    &__menu,
+    &__address-list{
+        margin: 0;
+        padding: 0;
+    }
+    &__logo,
+    &__menu,
+    &__address-list,
+    &__address-info{
+        flex-grow: 1;
+    }
+    &__menu,
+    &__address,
+    &__address-info{
+        line-height: 2;
+    }
+    &__address-icon{
+        fill: var(--primary-light);
+    }
+    &__address-icon:hover{
+        fill: var(--color-brand);
+    }
+}
+
+
+
+

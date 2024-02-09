@@ -1,0 +1,17 @@
+.section {
+    padding: 48px 0;
+}
+.section-title{
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 0;
+
+    @media screen and (min-width:$bp-desktop){
+        font-size: 64px;
+    }
+}
+.accent{
+    color: var(--color-brand);
+}
