@@ -76,59 +76,6 @@ span {
   color: var(--primary-dark);
 }
 
-.button-prev {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  fill: var(--primary-dark);
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid var(--primary-dark);
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .button-prev {
-    display: flex;
-  }
-}
-
-.button-prev:hover {
-  background-color: var(--color-brand);
-  border: 1px solid var(--primary-light);
-  fill: var(--primary-light);
-}
-
-.button-next {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  fill: var(--primary-dark);
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid var(--primary-dark);
-  cursor: pointer;
-  rotate: 180deg;
-}
-@media screen and (min-width: 768px) {
-  .button-next {
-    display: flex;
-  }
-}
-
-.button-next:hover {
-  background-color: var(--color-brand);
-  border: 1px solid var(--primary-light);
-  fill: var(--primary-light);
-}
-
 .header {
   top: 32px;
   left: 0;
@@ -290,7 +237,7 @@ span {
   max-height: 440px;
   text-align: left;
   padding: 40px;
-  gap: 22px;
+  gap: 18px;
   margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -298,10 +245,11 @@ span {
     align-items: center;
     gap: 40px;
     padding-left: 100px;
+    gap: 22px;
   }
 }
 .changes-section__text {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
   margin-bottom: 0;
 }
@@ -452,17 +400,10 @@ span {
   }
 }
 
-.procedures-section__list {
-  display: flex;
-  gap: 15px;
-}
-.procedures-section__container {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-.procedures-section__list {
-  margin-bottom: 32px;
+.procedures-section__title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: -15px;
 }
 .procedures-section__card {
   background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--primary-dark) 100%);
@@ -488,10 +429,6 @@ span {
   border-bottom-left-radius: 120px;
   border-bottom-right-radius: 4px;
 }
-.procedures-section__title {
-  text-align: center;
-  margin-bottom: 40px;
-}
 .procedures-section__text {
   position: relative;
   top: 350px;
@@ -501,9 +438,9 @@ span {
   color: var(--primary-light);
 }
 
-.swiper-slide {
-  max-width: 355px;
-  margin: 0;
+.swiper-wrapper {
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 .contact-section__title {
@@ -928,6 +865,7 @@ span {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  margin-top: 25px;
 }
 .pagination__button {
   width: 12px;
